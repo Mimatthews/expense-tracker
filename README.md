@@ -234,20 +234,6 @@ curl -X POST http://localhost:8000/api/transactions \
   so six slices in a chart stay distinguishable without becoming confetti, and the
   accent blue still reads as *the* accent.
 
-## Deploy the landing page (GitHub Pages)
-
-The `docs/` folder is a self-contained static landing page (no build step, no external
-assets), which is what GitHub Pages serves.
-
-1. Push this repo to GitHub.
-2. **Settings → Pages → Build and deployment**
-   - *Source*: **Deploy from a branch**
-   - *Branch*: `main` · *Folder*: `/docs`
-3. Save. Your page appears at <https://Mimatthews.github.io/expense-tracker/>.
-
-> **Note:** GitHub Pages only serves static files, so the app itself (FastAPI + SQLite)
-> runs locally or on any Python host — e.g. Render, Railway or Fly.io for the API plus
-> Vercel/Netlify for the built frontend. The Pages site is the portfolio entry point.
 
 ## Roadmap
 
